@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		F0E98966196EBC6D0009A427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E98965196EBC6D0009A427 /* AppDelegate.swift */; };
-		F0E98968196EBC6D0009A427 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E98967196EBC6D0009A427 /* FirstViewController.swift */; };
-		F0E9896A196EBC6D0009A427 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E98969196EBC6D0009A427 /* SecondViewController.swift */; };
+		F0E98968196EBC6D0009A427 /* ViewControllerWBKurse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E98967196EBC6D0009A427 /* ViewControllerWBKurse.swift */; };
+		F0E9896A196EBC6D0009A427 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E98969196EBC6D0009A427 /* ViewControllerLogin.swift */; };
 		F0E9896D196EBC6D0009A427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0E9896B196EBC6D0009A427 /* Main.storyboard */; };
 		F0E9896F196EBC6D0009A427 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0E9896E196EBC6D0009A427 /* Images.xcassets */; };
 		F0E9897B196EBC6D0009A427 /* TabbarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E9897A196EBC6D0009A427 /* TabbarTests.swift */; };
+		F0E98985196EBE0F0009A427 /* ViewControllerEinstellungen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E98984196EBE0F0009A427 /* ViewControllerEinstellungen.swift */; };
+		F0E98988196EBEA30009A427 /* Default@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0E98986196EBEA30009A427 /* Default@2x.jpg */; };
+		F0E98989196EBEA30009A427 /* Default@R4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0E98987196EBEA30009A427 /* Default@R4.jpg */; };
+		F0E9898B196EC6E10009A427 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E9898A196EC6E10009A427 /* MapKit.framework */; };
+		F0E9898D196EC7B00009A427 /* ViewControllerMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E9898C196EC7B00009A427 /* ViewControllerMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +34,18 @@
 		F0E98960196EBC6D0009A427 /* Tabbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tabbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0E98964196EBC6D0009A427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0E98965196EBC6D0009A427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0E98967196EBC6D0009A427 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		F0E98969196EBC6D0009A427 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F0E98967196EBC6D0009A427 /* ViewControllerWBKurse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWBKurse.swift; sourceTree = "<group>"; };
+		F0E98969196EBC6D0009A427 /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
 		F0E9896C196EBC6D0009A427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0E9896E196EBC6D0009A427 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F0E98974196EBC6D0009A427 /* TabbarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabbarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0E98979196EBC6D0009A427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0E9897A196EBC6D0009A427 /* TabbarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarTests.swift; sourceTree = "<group>"; };
+		F0E98984196EBE0F0009A427 /* ViewControllerEinstellungen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerEinstellungen.swift; sourceTree = "<group>"; };
+		F0E98986196EBEA30009A427 /* Default@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Default@2x.jpg"; sourceTree = "<group>"; };
+		F0E98987196EBEA30009A427 /* Default@R4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Default@R4.jpg"; sourceTree = "<group>"; };
+		F0E9898A196EC6E10009A427 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F0E9898C196EC7B00009A427 /* ViewControllerMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E9898B196EC6E10009A427 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +70,7 @@
 		F0E98957196EBC6D0009A427 = {
 			isa = PBXGroup;
 			children = (
+				F0E9898A196EC6E10009A427 /* MapKit.framework */,
 				F0E98962196EBC6D0009A427 /* Tabbar */,
 				F0E98977196EBC6D0009A427 /* TabbarTests */,
 				F0E98961196EBC6D0009A427 /* Products */,
@@ -78,8 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				F0E98965196EBC6D0009A427 /* AppDelegate.swift */,
-				F0E98967196EBC6D0009A427 /* FirstViewController.swift */,
-				F0E98969196EBC6D0009A427 /* SecondViewController.swift */,
+				F0E98967196EBC6D0009A427 /* ViewControllerWBKurse.swift */,
+				F0E98984196EBE0F0009A427 /* ViewControllerEinstellungen.swift */,
+				F0E9898C196EC7B00009A427 /* ViewControllerMap.swift */,
+				F0E98969196EBC6D0009A427 /* ViewControllerLogin.swift */,
 				F0E9896B196EBC6D0009A427 /* Main.storyboard */,
 				F0E9896E196EBC6D0009A427 /* Images.xcassets */,
 				F0E98963196EBC6D0009A427 /* Supporting Files */,
@@ -90,6 +104,8 @@
 		F0E98963196EBC6D0009A427 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F0E98986196EBEA30009A427 /* Default@2x.jpg */,
+				F0E98987196EBEA30009A427 /* Default@R4.jpg */,
 				F0E98964196EBC6D0009A427 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +177,11 @@
 				TargetAttributes = {
 					F0E9895F196EBC6D0009A427 = {
 						CreatedOnToolsVersion = 6.0;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					F0E98973196EBC6D0009A427 = {
 						CreatedOnToolsVersion = 6.0;
@@ -192,8 +213,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E98989196EBEA30009A427 /* Default@R4.jpg in Resources */,
 				F0E9896D196EBC6D0009A427 /* Main.storyboard in Resources */,
 				F0E9896F196EBC6D0009A427 /* Images.xcassets in Resources */,
+				F0E98988196EBEA30009A427 /* Default@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,9 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0E9896A196EBC6D0009A427 /* SecondViewController.swift in Sources */,
+				F0E9896A196EBC6D0009A427 /* ViewControllerLogin.swift in Sources */,
 				F0E98966196EBC6D0009A427 /* AppDelegate.swift in Sources */,
-				F0E98968196EBC6D0009A427 /* FirstViewController.swift in Sources */,
+				F0E98985196EBE0F0009A427 /* ViewControllerEinstellungen.swift in Sources */,
+				F0E9898D196EC7B00009A427 /* ViewControllerMap.swift in Sources */,
+				F0E98968196EBC6D0009A427 /* ViewControllerWBKurse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

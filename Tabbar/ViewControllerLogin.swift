@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  Tabbar
 //
 //  Created by Philipp Süess on 10.07.14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ViewControllerLogin: UIViewController {
                             
     override func viewDidLoad() {
         super.viewDidLoad()
