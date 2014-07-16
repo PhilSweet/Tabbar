@@ -110,7 +110,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="NhM-3a-96a"/>
                     <connections>
-                        <outlet property="MApView" destination="g9v-Mt-8Og" id="85e-v3-bus"/>
+                        <outlet property="MapView" destination="g9v-Mt-8Og" id="gIK-Ux-0B1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJ4-xE-b74" userLabel="First Responder" sceneMemberID="firstResponder"/>
