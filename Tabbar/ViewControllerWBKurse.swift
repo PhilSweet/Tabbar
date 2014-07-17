@@ -14,7 +14,7 @@ class ViewControllerWBKurse: UIViewController {
     @IBOutlet var Webview: UIWebView
     
     
-    var URLPath = "http://evento-web.phlu.ch"
+    var URLPath = "https://ewdev.phlu.ch/index.php?id=1932"
     
     func loadAddressURL() {
         let requestURL = NSURL(string:URLPath)
