@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
         <capability name="Unknown constraint types" minToolsVersion="5.1"/>
     </dependencies>
@@ -19,18 +18,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView multipleTouchEnabled="YES" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jmv-ke-N6K">
-                                <rect key="frame" x="0.0" y="20" width="480" height="417"/>
+                                <rect key="frame" x="0.0" y="67" width="480" height="370"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RO2-xT-Frn">
+                                <rect key="frame" x="0.0" y="26" width="480" height="41"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jmv-ke-N6K" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="15r-wD-TUR"/>
-                            <constraint firstItem="jmv-ke-N6K" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="20" id="30h-E5-kwY"/>
+                            <constraint firstItem="jmv-ke-N6K" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="67" id="30h-E5-kwY"/>
+                            <constraint firstAttribute="trailing" secondItem="RO2-xT-Frn" secondAttribute="trailing" id="4BN-Ir-uYa"/>
                             <constraint firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="8qp-4k-ywN"/>
                             <constraint firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="9hT-Pl-9vo"/>
                             <constraint firstAttribute="trailing" secondItem="jmv-ke-N6K" secondAttribute="trailing" id="EQ2-QP-U3U"/>
                             <constraint firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailing" id="GCv-eZ-Lr1"/>
+                            <constraint firstItem="RO2-xT-Frn" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="ZPd-9W-XA2"/>
+                            <constraint firstItem="RO2-xT-Frn" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="6" id="kpv-UC-whl"/>
                             <constraint firstAttribute="bottom" secondItem="jmv-ke-N6K" secondAttribute="bottom" constant="43" id="mTp-Uv-pGL"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -38,11 +46,12 @@
                     <tabBarItem key="tabBarItem" title="WB Kurse" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="Webview" destination="jmv-ke-N6K" id="8iG-Eq-uaZ"/>
+                        <outlet property="pageTitle" destination="RO2-xT-Frn" id="NtU-vL-nhm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2990" y="464"/>
+            <point key="canvasLocation" x="2992" y="455"/>
         </scene>
         <!--View Controller Einstellungen - Einstellungen-->
         <scene sceneID="Ep4-KY-07M">

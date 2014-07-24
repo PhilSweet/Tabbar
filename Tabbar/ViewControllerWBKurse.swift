@@ -20,6 +20,21 @@ class ViewControllerWBKurse: UIViewController {
         let requestURL = NSURL(string:URLPath)
         let request = NSURLRequest(URL:requestURL)
         Webview.loadRequest(request)
+        
+        /*
+        while (1==1)
+        {
+            if (Webview.loading)
+            {
+                //Titel auslesen
+                let title = Webview.stringByEvaluatingJavaScriptFromString("2+3")
+                println("Page loaded: "+title)
+                break
+            }
+            
+            println("loading")
+ 
+        }*/
     }
     
     override func viewDidLoad() {
@@ -27,6 +42,29 @@ class ViewControllerWBKurse: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         loadAddressURL()
+        
+        TitelAusgeben()
+    }
+    
+    
+    @IBOutlet var pageTitle: UITextField
+    
+    
+    func TitelAusgeben() {
+        
+        //Titel auslesen
+        var title = Webview.stringByEvaluatingJavaScriptFromString("document.title")
+        
+        if (title.bridgeToObjectiveC().length > 0) {
+            println("PageTitel: " + title)
+            pageTitle.text = title
+        }
+        else
+        {
+            //timer, der sich selbst aufruft!
+            var timer = NSTimer.scheduledTimerWithTimeInterval(0.05, target: self, selector: Selector("TitelAusgeben"), userInfo: nil, repeats: false)
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
