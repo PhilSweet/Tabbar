@@ -14,7 +14,7 @@ import MapKit
 
 class ViewControllerMap: UIViewController {
     
-    @IBOutlet var MapView: MKMapView
+    @IBOutlet var MapView: MKMapView!
     
     
     override func viewDidLoad() {

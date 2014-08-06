@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ViewControllerWBKurse: UIViewController {
+class ViewControllerWBKurse: UIViewController, UIWebViewDelegate {
     
     
-    @IBOutlet var Webview: UIWebView
+    @IBOutlet var Webview: UIWebView!
     
     
     var URLPath = "https://ewdev.phlu.ch/index.php?id=1932"
@@ -21,48 +21,57 @@ class ViewControllerWBKurse: UIViewController {
         let request = NSURLRequest(URL:requestURL)
         Webview.loadRequest(request)
         
-        /*
-        while (1==1)
-        {
-            if (Webview.loading)
-            {
-                //Titel auslesen
-                let title = Webview.stringByEvaluatingJavaScriptFromString("2+3")
-                println("Page loaded: "+title)
-                break
-            }
-            
-            println("loading")
- 
-        }*/
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //start delegate
+        Webview.delegate = self
+        
         loadAddressURL()
         
-        TitelAusgeben()
+       //TitelAusgeben()
+    }
+    
+
+    //delegate function erweiterung
+      func webViewDidFinishLoad(Webview: UIWebView!){
+        
+        //Titel auslesen
+        var title = Webview.stringByEvaluatingJavaScriptFromString("document.title")
+        
+        if ( (title as NSString).length > 0) {
+            println("PageTitel: " + title)
+            pageTitle.text = title
+        } else {
+            println("PageTitel: Nicht gesetzt > Kurssuche")
+            pageTitle.text = "Kurssuche"
+        }
+    
+        println("view did load!")
+        
     }
     
     
-    @IBOutlet var pageTitle: UITextField
+    @IBOutlet var pageTitle: UITextField!
     
     
+    //timed event > titel ausgeben
     func TitelAusgeben() {
         
         //Titel auslesen
         var title = Webview.stringByEvaluatingJavaScriptFromString("document.title")
         
-        if (title.bridgeToObjectiveC().length > 0) {
+        if ( (title as NSString).length > 0) {
             println("PageTitel: " + title)
             pageTitle.text = title
         }
         else
         {
             //timer, der sich selbst aufruft!
-            var timer = NSTimer.scheduledTimerWithTimeInterval(0.05, target: self, selector: Selector("TitelAusgeben"), userInfo: nil, repeats: false)
+           var timer = NSTimer.scheduledTimerWithTimeInterval(0.05, target: self, selector: Selector("TitelAusgeben"), userInfo: nil, repeats: false)
         }
         
     }
