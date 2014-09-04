@@ -55,11 +55,9 @@ class ViewControllerWBKurse: UIViewController, UIWebViewDelegate {
         
         /*
         string length:
-        
-        countElements(myString) //geht nicht mit nullable vars
-        myString.utf16Count //geht mit nullable vars (enstpricht dem objective-c NSString.length)
-
-
+        - countElements(myString) //geht nicht mit nullable vars
+        - myString.utf16Count //geht mit nullable vars (enstpricht dem objective-c NSString.length)
+        - (myString as NSString).length //bridge to obective-c geht mit Xcode Beta 7 nicht mehr
         */
         
     }
