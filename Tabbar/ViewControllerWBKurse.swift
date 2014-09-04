@@ -30,6 +30,7 @@ class ViewControllerWBKurse: UIViewController, UIWebViewDelegate {
         //start delegate
         Webview.delegate = self
         
+        //url laden
         loadAddressURL()
         
        //TitelAusgeben()
@@ -37,12 +38,12 @@ class ViewControllerWBKurse: UIViewController, UIWebViewDelegate {
     
 
     //delegate function erweiterung
-      func webViewDidFinishLoad(Webview: UIWebView!){
+    func webViewDidFinishLoad(Webview: UIWebView!){
         
         //Titel auslesen
-        var title = Webview.stringByEvaluatingJavaScriptFromString("document.title")
+        var ntitle: String? = Webview.stringByEvaluatingJavaScriptFromString("document.title") //retruns nullable String
         
-        if ( (title as NSString).length > 0) {
+        if var title = ntitle {  //Nullable Value unwrapping > setzt wert wenn nicht nil in die neue var
             println("PageTitel: " + title)
             pageTitle.text = title
         } else {
@@ -51,6 +52,15 @@ class ViewControllerWBKurse: UIViewController, UIWebViewDelegate {
         }
     
         println("view did load!")
+        
+        /*
+        string length:
+        
+        countElements(myString) //geht nicht mit nullable vars
+        myString.utf16Count //geht mit nullable vars (enstpricht dem objective-c NSString.length)
+
+
+        */
         
     }
     
@@ -62,9 +72,9 @@ class ViewControllerWBKurse: UIViewController, UIWebViewDelegate {
     func TitelAusgeben() {
         
         //Titel auslesen
-        var title = Webview.stringByEvaluatingJavaScriptFromString("document.title")
+        var ntitle: String? = Webview.stringByEvaluatingJavaScriptFromString("document.title") //returns nullable String
         
-        if ( (title as NSString).length > 0) {
+        if var title = ntitle { //Nullable Value unwrapping > setzt wert wenn nicht nil in die neue var
             println("PageTitel: " + title)
             pageTitle.text = title
         }
